@@ -1,0 +1,36 @@
+<hr>
+      <button class="btn btn-outline-primary" 
+      [routerLink]="['/nuevaRuta']">Nueva Ruta</button>
+<div class="row" style="text-align:center;">
+    <div class="col-md-8" >
+      <table class="table table-striped table-responsive" >
+        <thead class="thead-dark">
+          <tr>
+            <th>#</th>
+            <th>Lugar salida</th>
+            <th>Lugar llegada</th>
+            <th>Actividades</th>
+            <th>Tiempo estimado</th>
+            <th>Tiempo parada</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let rutas of listaRuta; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{rutas.lugar_salid}}</td>
+            <td>{{rutas.lugar_llegada}}</td>
+            <td>{{rutas.actividades}}</td>
+            <td>{{rutas.tiempo_estimado}}</td>
+            <td>{{rutas.tiempo_parada}}</td>
+            <td>{{rutas.precio}}</td>
+            <td>
+              <button class="btn btn-outline-success" 
+              [routerLink]="['/editarRuta/' + rutas.rutaID]">Editar</button>
+              <button class="btn btn-outline-danger" (click)="eliminar(rutas.rutaID)">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

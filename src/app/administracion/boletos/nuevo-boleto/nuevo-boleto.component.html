@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="text-xxl-center">Nuevo Boleto</div>
+    <form novalidate [formGroup]="boletos" (ngSubmit)="grabar()">
+  <fieldset>
+    <div class="from-group">
+      <label>Numero</label>
+      <input type="text" class="form-control" formControlName="numero"
+      placeholder="Ingrese el Numero">
+    </div>
+    <div class="form-group">
+      <label>Recorrido</label>
+      <select class="form-control" formControlName="recorridoID">
+        <option *ngFor="let recorrido of recorridos" value="{{ recorrido.recorridoID }}">{{ recorrido.nombre}}</option>
+      </select>
+    </div>
+    <div class="from-group">
+      <button class="btn btn-outline-success">Grabar</button>
+      <button class="btn btn-outline-secondary" [routerLink]="['/boletos']">Cancelar</button>
+    </div>
+  </fieldset>
+    </form>
+  </div>

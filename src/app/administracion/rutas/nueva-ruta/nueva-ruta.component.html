@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="text-xxl-center">Nueva Ruta</div>
+    <form novalidate [formGroup]="rutas" (ngSubmit)="grabar()">
+  <fieldset>
+    <div class="from-group">
+      <label>Lugar de salida</label>
+      <input type="text" class="form-control" formControlName="lugar_salid"
+      placeholder="Ingrese el Lugar de salida">
+    </div>
+    <div class="from-group">
+      <label>Lugar de llegada</label>
+      <input type="text" class="form-control" formControlName="lugar_llegada"
+      placeholder="Ingrese el Lugar de llegada">
+    </div>
+    <div class="from-group">
+      <label>Actividades</label>
+      <input type="text" class="form-control" formControlName="actividades"
+      placeholder="Ingrese la Actividades">
+    </div>
+    <div class="from-group">
+      <label>Tiempo estimado</label>
+      <input type="text" class="form-control" formControlName="tiempo_estimado"
+      placeholder="Ingrese el Tiempo estimado">
+    </div>
+    <div class="from-group">
+      <label>Tiempo de parada</label>
+      <input type="text" class="form-control" formControlName="tiempo_parada"
+      placeholder="Ingrese el Tiempo de parada">
+    </div>
+    <div class="from-group">
+        <label>Precio</label>
+        <input type="text" class="form-control" formControlName="precio"
+        placeholder="Ingrese el Precio">
+      </div>
+    <div class="from-group">
+      <button class="btn btn-outline-success">Grabar</button>
+      <button class="btn btn-outline-secondary" [routerLink]="['/rutas']">Cancelar</button>
+    </div>
+  </fieldset>
+    </form>
+  </div>
