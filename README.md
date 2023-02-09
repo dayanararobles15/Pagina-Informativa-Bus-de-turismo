@@ -1,6 +1,35 @@
-# Odontologia
+# Tourist Bus
+
+
+
+
+## :books: Description
+
+In this project, the management of the tourist buses of a city is carried out based on the available routes to assign the frequencies in a synchronized manner through the management of an administrator.
+
+## :woman_technologist: Technology
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
+
+-TypeScript
+
+-HTML
+
+-CSS
+
+-JavaScript
+
+
+## :clipboard: Requirements
+
+[- Angular.js](https://nodejs.org/es/) 
+
+[- TypeScript](https://nodejs.org/es/) 
+
+## :computer: IDE
+
+[- Visual Studio Code](https://code.visualstudio.com/) 
+
 
 ## Development server
 
@@ -25,3 +54,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## :woman_office_worker: Authors
+
+- [@dayanararobles15](https://github.com/dayanararobles15)
+
